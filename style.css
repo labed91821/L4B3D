@@ -1,0 +1,403 @@
+/* -----------------------------------------
+   Global Reset and Base Styles
+----------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Default background for non-home pages */
+  background: linear-gradient(135deg, #2c2c2c, #1c1c1c);
+  color: #f0f0f0;
+  font-family: 'Cinzel', serif;
+  line-height: 1.6;
+}
+
+/* Homepage background override */
+body.home {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* -----------------------------------------
+   Header and Logo Styles
+----------------------------------------- */
+.site-header {
+  position: relative;
+  text-align: center;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Circular logo in the top left */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f0f0f0;
+}
+ body {
+  background: linear-gradient(135deg, #2c2c2c, #1c1c1c); /* or your chosen global background */
+  color: #f0f0f0;
+  font-family: 'Cinzel', serif;
+  line-height: 1.6;
+}
+
+/* Global logo styling */
+.logo img {
+  width: 50px;    /* Set the size you want for all pages */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f0f0f0;
+}
+
+
+/* -----------------------------------------
+   Homepage Introduction and Icon Navigation
+----------------------------------------- */
+#intro {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+#home-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.icon-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: scale(1.1);
+}
+
+.icon-card a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.icon-card i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-card h2 {
+  font-size: 1.5rem;
+}section {
+  background-image: url('Background.jpg'); /* Replace with your actual background image file */
+  background-size: cover;       /* Ensures the image covers the whole section */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;
+  padding: 2rem;                /* Optional: add padding so content isn’t flush with the edge */
+}
+
+
+/* -----------------------------------------
+   Main Content Styles for About and Gallery Pages
+----------------------------------------- */
+/* Container for About section */
+.about-container {
+  display: flex;
+  align-items: center;  /* Vertically centers the image and text */
+  gap: 1.5rem;          /* Adjust spacing between image and text */
+  padding: 2rem;
+}
+
+
+/* About image styling (if needed) */
+.about-image {
+  width: 40%;             /* Adjust as needed */
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+/* About text container styling */
+.about-text {
+  flex: 1;
+  font-family: 'Comfortaa', sans-serif;  /* Apply Comfortaa here */
+  font-size: 1.3rem;  /* Increase font size here (adjust as needed) */
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Increasing space between the title and the following text */
+.about-text h2 {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2rem;      /* Example title size – adjust as needed */
+  margin-bottom: 1.5rem; /* Increased margin for more spacing */
+}
+/* -----------------------------------------
+   Gallery Page Styles
+----------------------------------------- *//* Global styles for media cards (images & videos) */
+.media-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.media-card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Image gallery arranged in 3 equal columns */
+#image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* /* Three Pictures Section: grid with three columns */
+#image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Style for individual media cards (both images and descriptions) */
+.media-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.media-card img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Video Section: center the content */
+.video-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Container for the video element; adjust the width here */
+.video-container video {
+  width: 50px;        /* You can change '50%' to a fixed width like '500px' if desired */
+  max-width: 200px;  /* Optional: set a max-width to keep it responsive */
+  border-radius: 5px;
+  display: inline-block; /* Helps in centering */
+}
+
+/* Styling for individual media cards (images and videos) */
+.media-card {
+  background: rgba(0, 0, 0, 0.4); /* Black square background */
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 4rem;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;  /* Ensure video matches the width of images */
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.media-card p {
+  font-size: 0.9rem; /* Ensure the description font size is consistent */
+  margin: 0;
+}
+
+/* -----------------------------------------
+   Footer and Social Icons
+----------------------------------------- */
+/* Footer Section */
+footer {
+  background-color: #1c1c1c; /* Dark footer background */
+  text-align: center;        /* Centers all content in the footer */
+  padding: 0.5rem 0;           /* Adds space around the footer */
+  width: 100%;               /* Ensures footer spans the full width */
+  border-top: 1px solid rgba(260, 260, 260, 0.2); /* Light dividing line */
+  position: fixed;           /* Keeps footer at the bottom of the page */
+  bottom: 0;                 /* Aligns footer to the page bottom */
+  left: 0;                   /* Ensures it spans from the left edge */
+  z-index: 100;               /* Places the footer above background elements */
+}
+
+/* Styling for the Linktree Logo */
+footer .linktree {
+  display: inline-block;     /* Centers the logo */
+  margin-top: 0.5rem;        /* Adds some spacing above the logo */
+}
+
+footer .linktree img {
+  width: 30px;               /* Set a smaller size for the Linktree logo */
+  height: auto;              /* Maintain aspect ratio */
+  margin: 0 auto;            /* Centers the logo horizontally */
+  display: block;            /* Ensures proper layout inside the footer */
+}
+
+footer .linktree:hover {
+  transform: scale(1.1);     /* Adds a hover effect for interactivity */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Styling for each watchlist card */
+.watchlist-page .watchlist-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #f0f0f0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.watchlist-page .watchlist-card:hover {
+  transform: scale(1.05);
+}
+
+.watchlist-page .watchlist-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.watchlist-page .watchlist-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.watchlist-page .watchlist-card p {
+  font-size: 0.9rem;
+}
+
+/* Styling for the option buttons on the watchlist page */
+.watchlist-page #watchlist-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+
+#favoritesBtn, #watchlistBtn {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#favoritesBtn:hover, #watchlistBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.watchlist-page #watchlist-options .option {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.watchlist-page #watchlist-options .option:hover {
+  transform: scale(1.1);
+}
+
+.watchlist-page #watchlist-options .option h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+#watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.watchlist-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.watchlist-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+

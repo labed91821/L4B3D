@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watchlist | Labed's Gothic Realm</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for the gothic vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Animate.css for smooth animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Tabletop.js/1.5.1/tabletop.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Font Awesome (if you need additional icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Include Tabletop.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tabletop@1.5.2/src/tabletop.min.js"></script>
+</head>
+<body>
+  <header class="site-header animate__animated animate__fadeInDown">
+    <div class="logo">
+<body class="watchlist-page">
+  <!-- The rest of your HTML content -->
+</body>
+
+      <a href="index.html">
+        <img src="images/dff8kia-45ed79c0-32d6-4472-a08d-4e0eabecd592.jpg" alt="Logo">
+      </a>
+    </div>
+    <h1>Watchlist</h1>
+  </header>
+  
+  <main>
+    <!-- Introductory Text -->
+    <section id="watchlist-description" class="animate__animated animate__fadeInUp">
+      <p>
+        Here you can view my curated watchlist. Please choose one of the options below:
+      </p>
+    </section>
+    
+    <!-- Options to choose which grid to load -->
+    <section id="watchlist-options" class="animate__animated animate__fadeInUp">
+  <div class="option" onclick="fetchWatchlist('https://docs.google.com/spreadsheets/d/e/2PACX-1vRD-8tUObA46f-lYxB9f2bSvzNsPTLiDGxhmLSvRW9N5keIKlDW5J6uWiTgsgB85C_xovHxBwzNvdN0/pubhtml?gid=0&single=true')">
+   <h2>2025 Watchlist</h2>
+</div>
+<div class="option" onclick="fetchWatchlist('https://docs.google.com/spreadsheets/d/e/2PACX-1vRD-8tUObA46f-lYxB9f2bSvzNsPTLiDGxhmLSvRW9N5keIKlDW5J6uWiTgsgB85C_xovHxBwzNvdN0/pubhtml?gid=1710654212&single=true')">
+   <h2>Favorites</h2>
+</div>
+    </section>
+
+    
+    <!-- Container where the grid will be generated -->
+    <section id="watchlist-grid" class="grid-container animate__animated animate__fadeInUp">
+      <!-- JavaScript will render grid items here -->
+    </section>
+  </main>
+  
+ <footer>
+  <a href="https://linktr.ee/labed_0" target="_blank" class="linktree">
+    <img src="https://drive.google.com/file/d/1iQX5fycHViL06P1SKeoCrmd3QNuyKQgO/view?usp=sharing" alt="Linktree">
+  </a>
+</footer>
+
+  
+  <!-- Our custom JavaScript (script.js) will run below -->
+  <script src="script.js"></script>
+</body>
+</html>
